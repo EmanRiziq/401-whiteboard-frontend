@@ -35,7 +35,7 @@ class Post extends Component {
 
                 {this.state.data.map((item, idx) => {
                     return (
-                        <DisplayPost id={item.id} />
+                        <DisplayPost key={idx} id={item.id} />
                     )
                 })}
             </div>
